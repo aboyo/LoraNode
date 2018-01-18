@@ -31,15 +31,15 @@ void LoRa_init() {
 
 void LoRa_parameter() {
 
-  SendString = "mac set_deveui 00a451b574e1ecc7";
+  SendString = "mac set_deveui 00a451b5xxxxxxxx";
   Serial.print("set_deveui>");
   Serial.print(sendLoRacmd(SendString , 300));
 
-  SendString = "mac set_appeui 70b3d57ed00093be";
+  SendString = "mac set_appeui 70b3d57exxxxxxxx";
   Serial.print("set_appeui>");
   Serial.print(sendLoRacmd(SendString , 300));
 
-  SendString = "mac set_appkey 45d21689238a44e4339b813b57333683";
+  SendString = "mac set_appkey 45d21689238a44e4339b813bxxxxxxxx";
   Serial.print("set_appkey>");
   Serial.print(sendLoRacmd(SendString , 300));
 
